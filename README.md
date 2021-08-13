@@ -1,2 +1,1 @@
-# Pomodoro_C
-lock
+# Pomodoro_Clock
