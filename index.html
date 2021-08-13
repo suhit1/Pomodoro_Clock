@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <input type="text" id="inp" />
+    <button id="btn" class="btn">submit</button>
+    <h3 id="mints"></h3>
+    <h3 id="secs"></h3> -->
+    <div class="container">
+      <div class="upper" id="upper">
+        <div id="time" class="time">
+          <h3 class="mints" id="mints">00</h3>
+          <h3 class="j" id="j">:</h3>
+          <h3 class="secs" id="secs">00</h3>
+        </div>
+      </div>
+      <div class="lower" id="lower">
+        <h2 class="sesion_break_heading" id="sesion_break_heading">
+          Session 1
+        </h2>
+        <p class="dot">...............................................</p>
+        <div class="session_break">
+          <div class="session_div">
+            <p class="session_time">session time</p>
+            <div class="set_time_session">
+              <h3 id="session_time_no" class="side mints_time">0</h3>
+              <h3 class="side min">min</h3>
+            </div>
+            <div class="plus_minus_session" id="plus_minus_session">
+              <button id="minus_session" class="btn minus_session">-</button>
+              <button id="plus_session" class="btn plus_session">+</button>
+            </div>
+          </div>
+          <div class="break_div">
+            <p class="break_time">break time</p>
+            <div class="set_time_break">
+              <h3 id="break_time_no" class="side secs_time">0</h3>
+              <h3 class="side sec">min</h3>
+            </div>
+            <div class="plus_minus_break" id="plus_minus_break">
+              <button id="minus_break" class="btn minus_break">-</button>
+              <button id="plus_break" class="btn plus_break">+</button>
+            </div>
+          </div>
+        </div>
+        <p class="dot">...............................................</p>
+        <div class="start_reset">
+          <button class="start" id="start">Start</button>
+          <button class="reset" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

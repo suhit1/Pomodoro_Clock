@@ -1,0 +1,110 @@
+body {
+  background-color: #c99951;
+}
+
+.container {
+  height: 460px;
+  width: 220px;
+  margin: auto;
+  background-color: #593e00;
+  margin-top: 150px;
+  opacity: 0.8;
+  box-shadow: 10px 10px 10px 5px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper {
+  width: 200px;
+  background-color: white;
+  margin: 5px;
+  margin-top: 10px;
+  height: 150px;
+  border: 5px solid darkgray;
+}
+
+.time {
+  display: flex;
+  color: rgb(14, 133, 133);
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.lower {
+  width: 200px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.session_break {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sesion_break_heading {
+  text-align: center;
+  color: white;
+}
+
+.dot {
+  color: white;
+  text-align: center;
+}
+
+.set_time_session,
+.set_time_break {
+  display: flex;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.plus_minus_session,
+.plus_minus_break {
+  display: flex;
+}
+
+.btn,
+.side {
+  margin: 5px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 30px;
+}
+
+.set_time_break {
+  color: coral;
+}
+
+.set_time_session {
+  color: rgb(36, 168, 168);
+}
+
+.session_time,
+.break_time {
+  color: white;
+}
+
+.start_reset {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.start,
+.reset {
+  background-color: black;
+  color: white;
+  width: 80px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.time {
+  color: grey;
+}
