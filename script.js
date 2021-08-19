@@ -93,7 +93,6 @@ start.addEventListener("click", function () {
     console.log(`in session_id_mints`);
     if (mints_time < 0) {
       clearInterval(session_id_mints);
-      clearInterval(session_id_secs);
       sesion_break_heading.innerText = `Break!`;
       time.style.color = "coral";
       upper.style.borderColor = "coral";
@@ -117,21 +116,6 @@ start.addEventListener("click", function () {
           mints_time.innerText = break_time;
         }
       }, 60000); // 1 minute = 60,000 miliseconds
-
-      // break time seconds
-
-      let sec = 60;
-      secs.innerText = `60`;
-
-      break_id_secs = setInterval(() => {
-        sec--;
-        if (sec < 10) secs.innerText = `0${sec}`;
-        else secs.innerText = `${sec}`;
-        if (sec <= 0) {
-          sec = 60;
-          console.log(`break_sec`);
-        }
-      }, 1000); // 1 sec =  1000 miliseconds
     }
   }, 60000); // 1 minute = 60,000 miliseconds
 
@@ -168,9 +152,8 @@ reset.addEventListener("click", function () {
   sesion_break_heading.innerText = "Session 1";
 
   clearInterval(session_id_mints);
-  // clearInterval(session_id_secs);
+  clearInterval(session_id_secs);
   clearInterval(break_id_mints);
-  clearInterval(break_id_secs);
 });
 
 function check_for_val_notzero() {
